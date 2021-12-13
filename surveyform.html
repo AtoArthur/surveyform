@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="surveyform.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="conatainer">
+            <header class="header">
+                <h1 id="title" class="text-center">General Well Being Survey Form</h1>
+                <p id="description" class="description text-center">Thank you for taking time to fill this form.</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" requuired/>
+                </div>
+                <div class="form-group">
+                    <label id="email-label for="email>Email</label>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Age<span class="clue">(optional)</span></label>
+                    <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/>
+                </div>
+                <div class="form-group">
+                    <p>which option best describes your current state?</p>
+                    <select id="drop-down" name="state" class="form-control" required>
+                        <option disabled selected value>Select current state</option>
+                        <option value="calm">Calm</option>
+                        <option value="stressed">Stressed</option>
+                        <option value="happy">Happy</option>
+                        <option value="sad">Sad</option>
+                        <option value="preferNo">Prefer not to say</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p>Do you need help?</p>
+                    <label>
+                        <input name="user-recommend" value="definitely" type="checkbox" class="input-checkbox"/>Definitely
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="maybe" type="checkbox" class="input-checkbox"/>Maybe
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="no" type="checkbox" class="input-checkbox"/>No
+                    </label>
+
+                    <div class="form-group">
+                        <p>Which form of help do you need now?</p>
+                        <label>
+                            <input name="user-recommend" value="advice" type="checkbox" class="input-checkbox"/>Advice
+                        </label>
+                        <label>
+                            <input name="user-recommend" value="motivation" type="checkbox" class="input-checkbox"/>Motivation
+                        </label>
+                </div>
+
+                <div class="form-group">
+                    <p>What influenced your current state? </p>
+                    <label>
+                        <input name="user-recommend" value="parents" type="checkbox" class="input-checkbox" />Words from parents
+                    </label>
+                    <label>
+                        <input name="user-recommend" value="friends" type="checkbox" class="input-checkbox"/>Words from friends
+                    </label>
+                    <input name="user-recommend" value="preferNo" type="checkbox" class="input-checkbox"/>Prefer not to mention
+                    </label>
+                    <input name="user-recommend" value="other" type="checkbox" class="input-checkbox"/>Other
+                    </label>
+                </div>
+                
+                <div class="form-group">
+                    <p>Do you need professional advice?</p>
+                    <label>
+                        <input name="prefer" value="yes" type="checkbox" class="input-checkbox"/>Yes
+                    </label>
+                    <label>
+                        <input name="prefer" value="no" type="checkbox" class="input-checkbox"/>No
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p>Any comments</p>
+                    <textarea id="comments" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+                </div>    
+
+                    <div class="form=group">
+                        <button type="submit" id="submit" class="submit-button">Submit</button>
+                    </div>
+                </div>    
+            </form>
+         </div>   
+    </body>
+</html>
